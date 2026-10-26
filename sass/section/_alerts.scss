@@ -1,0 +1,14 @@
+@use "../base/variable" as *;
+@use "../utils/placeholders" as *;
+
+.alerts {
+  &__button {
+    @extend %button-base;
+
+    display: block;
+    margin: 24px auto 0;
+    padding: 12px 20px;
+    background-color: $dark;
+    color: $white;
+  }
+}

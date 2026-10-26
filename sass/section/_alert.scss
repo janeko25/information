@@ -1,0 +1,44 @@
+@use "../base/variable" as *;
+@use "../utils/mixins" as *;
+@use "../utils/placeholders" as *;
+
+.alert {
+  @extend %alert-base;
+
+  &__title {
+    margin: 0 32px 8px 0;
+    font-size: 18px;
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+
+  &__close {
+    @extend %button-base;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 2px 8px;
+    background-color: transparent;
+    color: inherit;
+    font-size: 22px;
+  }
+
+  &--info {
+    @include alert-theme($info-background, $info-text, $info-border);
+  }
+
+  &--success {
+    @include alert-theme($success-background, $success-text, $success-border);
+  }
+
+  &--warning {
+    @include alert-theme($warning-background, $warning-text, $warning-border);
+  }
+
+  &--error {
+    @include alert-theme($error-background, $error-text, $error-border);
+  }
+}

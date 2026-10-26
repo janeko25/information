@@ -1,0 +1,11 @@
+@use "./variable" as *;
+
+body {
+  font-family: Arial, sans-serif;
+  color: $dark;
+  background-color: $background;
+}
+
+.page {
+  padding: 48px 0;
+}

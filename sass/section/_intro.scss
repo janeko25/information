@@ -1,0 +1,25 @@
+@use "../base/variable" as *;
+
+.intro {
+  margin-bottom: 32px;
+  text-align: center;
+
+  &__label {
+    margin-bottom: 10px;
+    color: $muted;
+    font-size: 14px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    color: $dark;
+    font-size: 36px;
+  }
+
+  &__text {
+    max-width: 500px;
+    margin: 0 auto;
+    color: $muted;
+    line-height: 1.5;
+  }
+}
